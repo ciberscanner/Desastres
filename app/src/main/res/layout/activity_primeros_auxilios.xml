@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -15,14 +15,24 @@
             android:textSize="20sp"
             android:textColor="@color/colorWhite"
             android:gravity="center"
-            android:text="Durante un Sismo"/>
+            android:text="Fracturas"/>
 
     </LinearLayout>
 
-    <ImageView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@mipmap/sismo_durante" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/fractura" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

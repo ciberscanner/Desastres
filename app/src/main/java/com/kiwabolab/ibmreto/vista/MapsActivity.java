@@ -117,12 +117,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_fuegoderrumbe)));
 
 
-        LatLng MELBOURNE4 = new LatLng(4.673258, -74.048236);
+        LatLng MELBOURNE4 = new LatLng(4.653032, -74.050085);
         Marker melbourne4 = mMap.addMarker(new MarkerOptions()
                 .position(MELBOURNE4)
                 .title("Terremoto")
                 .snippet("Población afecta: 137,400")
-                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_fuegoderrumbe)));
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_sismo)));
 
     }
     //----------------------------------------------------------------------------------------------

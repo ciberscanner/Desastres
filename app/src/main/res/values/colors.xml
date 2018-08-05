@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#3498db</color>
     <color name="colorPrimaryDark">#2980b9</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#e74c3c</color>
     <color name="whiteCloud">#ecf0f1</color>
 
     <color name="primary50">#803498db</color>
@@ -10,6 +10,7 @@
     <color name="black50">#80000000</color>
 
     <color name="colorWhite">#ffffff</color>
+    <color name="amarillo">#f1c40f</color>
 
 
 

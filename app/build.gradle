@@ -35,4 +35,9 @@ dependencies {
     //----------------------------------------------------------------------------------------------
     //Material Dialogs
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //----------------------------------------------------------------------------------------------
+    //Gson Volley Picasso
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation files('libs/volley.jar')
+    implementation files('libs/picasso-2.5.2.jar')
 }

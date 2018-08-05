@@ -9,10 +9,14 @@
     -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
 
     <uses-permission android:name="android.permission.CAMERA" />
@@ -61,7 +65,7 @@
 
         <activity
             android:name=".vista.Home"
-            android:label="@string/title_activity_maps" android:screenOrientation="portrait"></activity>
+            android:label="S4World" android:screenOrientation="portrait"></activity>
 
         <activity
             android:name=".vista.MapsActivity"
@@ -69,6 +73,8 @@
 
         <activity android:name=".vista.NotificacionSMS" android:screenOrientation="portrait"/>
         <activity android:name=".vista.Prevencion" android:screenOrientation="portrait"/>
+        <activity android:name=".vista.PrimerosAuxilios" android:screenOrientation="portrait"/>
+
 
 
         <receiver android:name=".modelo.IncomingSms">

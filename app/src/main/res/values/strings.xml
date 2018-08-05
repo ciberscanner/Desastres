@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IBMReto</string>
+    <string name="app_name">S4World</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -19,6 +19,9 @@
     <string name="slide_1_desc">Aprende que debes hacer antes de que suceda una catastrofe</string>
     <string name="slide_2_desc">Conoce que puedes hacer en caso de que hayan heridos</string>
     <string name="slide_3_desc">Recibe información oportuna</string>
+
+    <string name="error_network">Comprueba tu conexión a internet</string>
+
 
     <!--    Permissions    -->
     <string name="permission_rationale_location">Se requiere acceso al servicio de ubicación para mostrar la función \'mi ubicación\', que muestra su ubicación actual en el mapa.</string>

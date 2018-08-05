@@ -6,11 +6,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@mipmap/mi_cuenta"
             android:title="Mi Cuenta" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@mipmap/map"
             android:title="Mapa de Alertas" />
         <item
             android:id="@+id/nav_reportar"
@@ -18,11 +18,11 @@
             android:title="Reportar" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@mipmap/prevencion"
             android:title="Prevención" />
         <item
             android:id="@+id/nav_auxilios"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@mipmap/primeros_auxilios"
             android:title="Primeros Auxilios" />
         <item
             android:id="@+id/nav_manage"
