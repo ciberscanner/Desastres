@@ -12,13 +12,13 @@
     <string name="skip">Saltar</string>
     <string name="start">Empezar</string>
 
-    <string name="slide_1_title"></string>
-    <string name="slide_2_title"></string>
-    <string name="slide_3_title"></string>
+    <string name="slide_1_title">Prevención</string>
+    <string name="slide_2_title">Primeros Auxilios</string>
+    <string name="slide_3_title">Comunicación</string>
 
-    <string name="slide_1_desc"></string>
-    <string name="slide_2_desc"></string>
-    <string name="slide_3_desc"></string>
+    <string name="slide_1_desc">Aprende que debes hacer antes de que suceda una catastrofe</string>
+    <string name="slide_2_desc">Conoce que puedes hacer en caso de que hayan heridos</string>
+    <string name="slide_3_desc">Recibe información oportuna</string>
 
     <!--    Permissions    -->
     <string name="permission_rationale_location">Se requiere acceso al servicio de ubicación para mostrar la función \'mi ubicación\', que muestra su ubicación actual en el mapa.</string>

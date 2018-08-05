@@ -21,7 +21,7 @@ import android.widget.TextView;
 import com.kiwabolab.ibmreto.R;
 import com.kiwabolab.ibmreto.controlador.PrefManager;
 
-public class Presentation extends AppCompatActivity {
+public class Prevencion extends AppCompatActivity {
     //----------------------------------------------------------------------------------------------
     //Variables
     private ViewPager viewPager;
@@ -36,20 +36,15 @@ public class Presentation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Checking for first time launch - before calling setContentView()
         prefManager = new PrefManager(this);
-        if (!prefManager.isFirstTimeLaunch()) {
-            launchHomeScreen();
-            finish();
-        }
+
 
         // Making notification bar transparent
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         }
 
-        setContentView(R.layout.activity_presentation);
+        setContentView(R.layout.activity_prevencion);
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
         dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
@@ -60,9 +55,9 @@ public class Presentation extends AppCompatActivity {
         // layouts of all welcome sliders
         // add few more layouts if you want
         layouts = new int[]{
-                R.layout.presentation1,
-                R.layout.presentation2,
-                R.layout.presentation3};
+                R.layout.sismo_antes,
+                R.layout.sismo_durante,
+                R.layout.sismo_despues};
 
         // adding bottom dots
         addBottomDots(0);
@@ -125,8 +120,6 @@ public class Presentation extends AppCompatActivity {
     //----------------------------------------------------------------------------------------------
     //redirecciona al login
     private void launchHomeScreen() {
-        prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(Presentation.this, Home.class));
         finish();
     }
     //----------------------------------------------------------------------------------------------

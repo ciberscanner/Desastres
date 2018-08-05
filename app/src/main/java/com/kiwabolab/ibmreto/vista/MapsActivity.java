@@ -2,6 +2,7 @@ package com.kiwabolab.ibmreto.vista;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -20,7 +21,9 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.kiwabolab.ibmreto.R;
 import com.kiwabolab.ibmreto.util.PermissionUtils;
@@ -50,6 +53,77 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+    }
+
+    //----------------------------------------------------------------------------------------------
+    //
+    private void MensajeEntrante(){
+        Intent intent = getIntent();
+
+        if(intent.hasExtra("traza")){
+            String traza=getIntent().getStringExtra("traza");
+
+            String icono=""+traza.substring(0,3);
+            traza=traza.substring(4,traza.length());
+            String mensaje= ""+traza.substring(0,traza.indexOf('*'));
+
+            traza = traza.substring(traza.indexOf('*'),traza.length());
+
+            String lat=traza.substring(1,traza.indexOf(','));
+            String lon =traza.substring(traza.indexOf(',')+1,traza.length());
+
+            Log.v("Esto es ", icono +"/"+mensaje+"/"+lat+"/"+lon);
+
+
+            LatLng MELBOURNE = new LatLng(Float.valueOf(lat),Float.valueOf(lon));
+            Marker melbourne = mMap.addMarker(new MarkerOptions()
+                    .position(MELBOURNE)
+                    .title("Refugio")
+                    .snippet(mensaje)
+                    .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_hospital)));
+
+            //mMap.addMarker(new MarkerOptions().position(new LatLng(Float.valueOf(lat), Float.valueOf(lon))).title(mensaje));
+
+        }else{
+            Marcas();
+        }
+    }
+    //----------------------------------------------------------------------------------------------
+    //
+    private void Marcas(){
+         LatLng MELBOURNE = new LatLng(4.683225,-74.055277);
+         Marker melbourne = mMap.addMarker(new MarkerOptions()
+                .position(MELBOURNE)
+                .title("Inundación")
+                .snippet("Población afectada: 0")
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_fuegoinundacion)));
+
+        LatLng MELBOURNE2 = new LatLng(4.687012, -74.033567);
+
+        Marker melbourne2 = mMap.addMarker(new MarkerOptions()
+                .position(MELBOURNE2)
+                .title("Incendio Forestal")
+                .snippet("Población afectada: 22")
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_fuego)));
+
+        LatLng MELBOURNE3 = new LatLng(4.716804, -74.036240);
+
+        Marker melbourne3 = mMap.addMarker(new MarkerOptions()
+                .position(MELBOURNE3)
+                .title("Deslizamientos")
+                .snippet("Población afectada: 50")
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_fuegoderrumbe)));
+
+
+        LatLng MELBOURNE4 = new LatLng(4.673258, -74.048236);
+        Marker melbourne4 = mMap.addMarker(new MarkerOptions()
+                .position(MELBOURNE4)
+                .title("Terremoto")
+                .snippet("Población afecta: 137,400")
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.pin_fuegoderrumbe)));
+
     }
     //----------------------------------------------------------------------------------------------
     //
@@ -78,6 +152,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         enableMyLocation();
         getLocationGPS();
+
+        MensajeEntrante();
     }
     //----------------------------------------------------------------------------------------------
     //
