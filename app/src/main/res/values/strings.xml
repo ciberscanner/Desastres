@@ -21,6 +21,11 @@
     <string name="slide_3_desc">Recibe información oportuna</string>
 
     <string name="error_network">Comprueba tu conexión a internet</string>
+    <string name="error_server_timeout">Error al conectar, el servidor no responde</string>
+    <string name="error_auth">Problema de autenticación</string>
+    <string name="error_server">El servidor no responde, intente más tarde</string>
+    <string name="error_client">Comprueba que los datos sean correctos</string>
+    <string name="error_generic">Ocurrió un error</string>
 
 
     <!--    Permissions    -->

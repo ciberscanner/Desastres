@@ -14,7 +14,7 @@
             android:title="Mapa de Alertas" />
         <item
             android:id="@+id/nav_reportar"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@mipmap/megaphone"
             android:title="Reportar" />
         <item
             android:id="@+id/nav_slideshow"
@@ -42,7 +42,7 @@
                 android:title="Enviar Señal" />
             <item
                 android:id="@+id/nav_numeros"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@mipmap/emergency_call"
                 android:title="Números de Emergencia" />
         </menu>
     </item>

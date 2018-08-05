@@ -15,8 +15,12 @@ public class Servidor {
     public String getUrlClima(String lat, String lon){
         return "https://@twcservice.mybluemix.net:443/api/weather/v1/geocode/"+lat+"/"+lon+"/observations.json?units=m&language=es-ES";
     }
-    private String getUrlAlertas(String lat, String lon){
+    public String getUrlAlertas(String lat, String lon){
         return "https://@twcservice.mybluemix.net:443/api/weather/v1/geocode/"+lat+"/"+lon+"/alerts.json?language=es-ES";
+    }
+
+    public String getSendInforme(){
+        return "";
     }
 
 }

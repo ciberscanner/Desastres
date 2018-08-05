@@ -174,7 +174,7 @@ public class Home extends AppCompatActivity
     private void getAlertasClima(){
         String lat="4.716804";
         String lon="-74.036240";
-        String json= servidor.getUrlClima(lat,lon);
+        String json= servidor.getUrlAlertas(lat,lon);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, json,
                 new Response.Listener<String>() {
@@ -190,8 +190,7 @@ public class Home extends AppCompatActivity
                                 //Log.v("MENSAJE",response);
                                 MostrarAlertas(reports);
                             } else {
-                                Toast.makeText(getApplicationContext(), "No hay registros para tu posición",
-                                        Toast.LENGTH_LONG).show();
+                                alerta.setText("No se registran alertas");
                             }
 
                         } else {
@@ -202,8 +201,9 @@ public class Home extends AppCompatActivity
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_network),
-                        Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_network),
+                  //      Toast.LENGTH_SHORT).show();
+                alerta.setText("No se registran alertas");
                 Log.v("Respuesta: ", "error");
                 //getUserString = "";
             }
@@ -303,7 +303,9 @@ public class Home extends AppCompatActivity
             Intent intent = new Intent(this, PrimerosAuxilios.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_reportar) {
+            Intent intent = new Intent(this, Reportar.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 

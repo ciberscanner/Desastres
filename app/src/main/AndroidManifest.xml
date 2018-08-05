@@ -74,6 +74,8 @@
         <activity android:name=".vista.NotificacionSMS" android:screenOrientation="portrait"/>
         <activity android:name=".vista.Prevencion" android:screenOrientation="portrait"/>
         <activity android:name=".vista.PrimerosAuxilios" android:screenOrientation="portrait"/>
+        <activity android:name=".vista.Reportar" android:screenOrientation="portrait"/>
+
 
 
 
