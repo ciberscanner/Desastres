@@ -7,31 +7,43 @@
         <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Mi Cuenta" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Mapa de Alertas" />
+        <item
+            android:id="@+id/nav_reportar"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Reportar" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Prevención" />
+        <item
+            android:id="@+id/nav_auxilios"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Primeros Auxilios" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Configuración" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Comunicaciones">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Conectate" />
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Enviar Señal" />
+            <item
+                android:id="@+id/nav_numeros"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Números de Emergencia" />
         </menu>
     </item>
 

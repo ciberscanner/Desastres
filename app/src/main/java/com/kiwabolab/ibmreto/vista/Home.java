@@ -1,5 +1,6 @@
-package com.kiwabolab.ibmreto;
+package com.kiwabolab.ibmreto.vista;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,8 +14,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.kiwabolab.ibmreto.R;
+
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    //----------------------------------------------------------------------------------------------
+    //Variables
+
+    //----------------------------------------------------------------------------------------------
+    //Constructor
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,8 +89,10 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_gallery) {
+            Intent intent = new Intent(this, MapsActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_slideshow) {
 
@@ -98,4 +108,7 @@ public class Home extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    //----------------------------------------------------------------------------------------------
+    //
+
 }

@@ -6,4 +6,25 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="next">Siguiente</string>
+    <string name="skip">Saltar</string>
+    <string name="start">Empezar</string>
+
+    <string name="slide_1_title"></string>
+    <string name="slide_2_title"></string>
+    <string name="slide_3_title"></string>
+
+    <string name="slide_1_desc"></string>
+    <string name="slide_2_desc"></string>
+    <string name="slide_3_desc"></string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Se requiere acceso al servicio de ubicación para mostrar la función \'mi ubicación\', que muestra su ubicación actual en el mapa.</string>
+    <string name="location_permission_denied">ViaS requiere permiso de ubicación para habilitar la capa \'mi ubicación\'. Inténtelo de nuevo y conceda acceso para usar la ubicación.\nSi el permiso ha sido denegado permanentemente, puede habilitarlo desde la Configuración del sistema &gt; Aplicaciones &gt; \'ViaS\'.</string>
+    <string name="permission_required_toast">Vias requiere el permiso de ubicación para funcionar correctamente.</string>
+
+
+
 </resources>
